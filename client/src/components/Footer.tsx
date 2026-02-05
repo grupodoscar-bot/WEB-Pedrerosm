@@ -7,14 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">PS</span>
-              </div>
-              <span className="font-['Fraunces'] font-semibold text-xl text-foreground">
-                Pedrero SM
-              </span>
-            </div>
+            <h3 className="font-['Fraunces'] font-semibold text-xl text-foreground mb-4">
+              Pedrero Social Media
+            </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Agencia de Social Media Marketing especializada en Instagram y TikTok. Badajoz, España.
             </p>
@@ -74,7 +69,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2026 Pedrero SM. Todos los derechos reservados.
+            © 2026 Pedrero Social Media. Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-organic text-sm">

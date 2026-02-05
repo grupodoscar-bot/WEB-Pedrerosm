@@ -465,7 +465,7 @@ export default function Home() {
             <div>
               <img 
                 src="https://private-us-east-1.manuscdn.com/sessionFile/0A7kUyW8a1lK0ebmC9lJ2X/sandbox/Aj4myfE9rN4772fs9NUgrJ-img-5_1770289112000_na1fn_YWJvdXQtdGVhbQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMEE3a1V5VzhhMWxLMGVibUM5bEoyWC9zYW5kYm94L0FqNG15ZkU5ck40NzcyZnM5TlVnckotaW1nLTVfMTc3MDI4OTExMjAwMF9uYTFmbl9ZV0p2ZFhRdGRHVmhiUS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=rTxyuR9BN2yBqS408lo4vzH5IhFahCzbo9P~hPKrHwM4H8xQpEHixgeiO9axSzwNUhaD4EglyiHjpcZVj4jtuLrBUEJ~TPfPkSA~39ROtPhit6iBmAWmo9w81deFcCH8Mc5cq75pxiAGpS42FG6~2t1oIRU7JNiO-QrozrqCaomyxAZosoa2T0t~Vc1RTiO0u2VGG~ni50fszbjnK2VioOeb8KFZAb01RaHEDZENc~mOI~IsoyuY2HzG41F70EhzJ~5rHqFxzvfkhoAkVk3peLybdl8GJXBKsIH4ioqqYldx9oawA~Ldd48RBOg62DNOAWsh1iA6O0~EaiOFiVSmBQ__"
-                alt="Equipo Pedrero SM"
+                alt="Equipo Pedrero Social Media"
                 className="rounded-3xl shadow-2xl w-full h-auto"
               />
             </div>
@@ -474,7 +474,7 @@ export default function Home() {
                 Más que una agencia, somos tu partner de crecimiento
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                En Pedrero SM, creemos en el poder de las conexiones humanas. Nacimos en Badajoz con el objetivo de ayudar a marcas valientes a contar su historia en el cambiante mundo digital. No solo gestionamos redes; construimos comunidades, impulsamos conversaciones y convertimos seguidores en clientes fieles.
+                En Pedrero Social Media, creemos en el poder de las conexiones humanas. Nacimos en Badajoz con el objetivo de ayudar a marcas valientes a contar su historia en el cambiante mundo digital. No solo gestionamos redes; construimos comunidades, impulsamos conversaciones y convertimos seguidores en clientes fieles.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                 Nuestro enfoque es simple: estrategia basada en datos, creatividad que deja huella y una consistencia que garantiza resultados. Somos un equipo joven, verificado y apoyado por instituciones, lo que nos da una perspectiva fresca y la solidez que tu marca necesita.
@@ -543,7 +543,7 @@ export default function Home() {
                         </div>
                       </div>
                       <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
-                        "Pedrero SM transformó completamente nuestra presencia en redes sociales. Su trabajo en nuestro evento navideño fue impecable, desde la planificación hasta la ejecución. Los reels que crearon generaron un engagement que nunca habíamos visto antes. Son profesionales, creativos y siempre están un paso adelante."
+                        "Pedrero Social Media transformó completamente nuestra presencia en redes sociales. Su trabajo en nuestro evento navideño fue impecable, desde la planificación hasta la ejecución. Los reels que crearon generaron un engagement que nunca habíamos visto antes. Son profesionales, creativos y siempre están un paso adelante."
                       </blockquote>
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
@@ -570,7 +570,7 @@ export default function Home() {
                         </div>
                       </div>
                       <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
-                        "Como marca artesanal, necesitábamos alguien que entendiera nuestra esencia y la transmitiera en digital. Pedrero SM capturó la elegancia y delicadeza de nuestras piezas de joyería de una manera que nos dejó sin palabras. Las ventas a través de Instagram aumentaron un 40% en solo tres meses."
+                        "Como marca artesanal, necesitábamos alguien que entendiera nuestra esencia y la transmitiera en digital. Pedrero Social Media capturó la elegancia y delicadeza de nuestras piezas de joyería de una manera que nos dejó sin palabras. Las ventas a través de Instagram aumentaron un 40% en solo tres meses."
                       </blockquote>
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
@@ -597,7 +597,7 @@ export default function Home() {
                         </div>
                       </div>
                       <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
-                        "Trabajar con Pedrero SM en nuestra colaboración con Coca-Cola fue una experiencia increíble. Gestionaron todo el evento con profesionalismo y crearon contenido que llegó a miles de personas. Su capacidad para coordinar con grandes marcas y mantener nuestra identidad local es admirable."
+                        "Trabajar con Pedrero Social Media en nuestra colaboración con Coca-Cola fue una experiencia increíble. Gestionaron todo el evento con profesionalismo y crearon contenido que llegó a miles de personas. Su capacidad para coordinar con grandes marcas y mantener nuestra identidad local es admirable."
                       </blockquote>
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
@@ -624,7 +624,7 @@ export default function Home() {
                         </div>
                       </div>
                       <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
-                        "Como startup, teníamos presupuesto limitado pero grandes ambiciones. Pedrero SM nos ayudó a construir una presencia sólida en redes desde cero. Su estrategia de contenidos fue clave para atraer a nuestros primeros clientes. Son un partner estratégico, no solo una agencia."
+                        "Como startup, teníamos presupuesto limitado pero grandes ambiciones. Pedrero Social Media nos ayudó a construir una presencia sólida en redes desde cero. Su estrategia de contenidos fue clave para atraer a nuestros primeros clientes. Son un partner estratégico, no solo una agencia."
                       </blockquote>
                       <div className="flex gap-1">
                         {[...Array(5)].map((_, i) => (
