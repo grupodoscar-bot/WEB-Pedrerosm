@@ -40,37 +40,39 @@ export default function Header() {
         <div className="container">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/">
-              <a className="flex items-center group relative z-50">
-                <img 
-                  src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/VuacErqQgkZnYdUQ.png" 
-                  alt="Pedrero Social Media"
-                  className="h-12 w-auto transition-organic group-hover:scale-105"
-                />
-              </a>
+            <Link href="/" className="flex items-center group relative z-50">
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/VuacErqQgkZnYdUQ.png" 
+                alt="Pedrero Social Media"
+                className="h-12 w-auto transition-organic group-hover:scale-105"
+              />
             </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
-              <Link href="/#servicios">
-                <a className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium">
-                  Servicios
-                </a>
+              <Link 
+                href="/#servicios"
+                className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium"
+              >
+                Servicios
               </Link>
-              <Link href="/#portfolio">
-                <a className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium">
-                  Portfolio
-                </a>
+              <Link 
+                href="/#portfolio"
+                className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium"
+              >
+                Portfolio
               </Link>
-              <Link href="/#nosotros">
-                <a className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium">
-                  Nosotros
-                </a>
+              <Link 
+                href="/#nosotros"
+                className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium"
+              >
+                Nosotros
               </Link>
-              <Link href="/#contacto">
-                <a className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium">
-                  Contacto
-                </a>
+              <Link 
+                href="/#contacto"
+                className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium"
+              >
+                Contacto
               </Link>
             </nav>
 
@@ -123,37 +125,33 @@ export default function Header() {
       >
         <nav className="flex flex-col p-8 gap-6">
           {/* Mobile Navigation Links */}
-          <Link href="/#servicios">
-            <a 
-              onClick={handleLinkClick}
-              className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
-            >
-              Servicios
-            </a>
+          <Link 
+            href="/#servicios"
+            onClick={handleLinkClick}
+            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
+          >
+            Servicios
           </Link>
-          <Link href="/#portfolio">
-            <a 
-              onClick={handleLinkClick}
-              className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
-            >
-              Portfolio
-            </a>
+          <Link 
+            href="/#portfolio"
+            onClick={handleLinkClick}
+            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
+          >
+            Portfolio
           </Link>
-          <Link href="/#nosotros">
-            <a 
-              onClick={handleLinkClick}
-              className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
-            >
-              Nosotros
-            </a>
+          <Link 
+            href="/#nosotros"
+            onClick={handleLinkClick}
+            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
+          >
+            Nosotros
           </Link>
-          <Link href="/#contacto">
-            <a 
-              onClick={handleLinkClick}
-              className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
-            >
-              Contacto
-            </a>
+          <Link 
+            href="/#contacto"
+            onClick={handleLinkClick}
+            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
+          >
+            Contacto
           </Link>
 
           {/* Mobile CTA Buttons */}
