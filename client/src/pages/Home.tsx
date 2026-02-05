@@ -151,25 +151,25 @@ export default function Home() {
           <svg className="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style={{stopColor: 'oklch(0.7 0.15 45)', stopOpacity: 0.1}} />
-                <stop offset="100%" style={{stopColor: 'oklch(0.6 0.12 30)', stopOpacity: 0.05}} />
+                <stop offset="0%" style={{stopColor: 'oklch(0.8 0.15 45)', stopOpacity: 0.4}} />
+                <stop offset="100%" style={{stopColor: 'oklch(0.7 0.12 30)', stopOpacity: 0.25}} />
               </linearGradient>
             </defs>
-            <path d="M 0,100 Q 250,50 500,100 T 1000,100" stroke="url(#lineGradient)" strokeWidth="2" fill="none">
+            <path d="M 0,100 Q 250,50 500,100 T 1000,100" stroke="url(#lineGradient)" strokeWidth="4" fill="none">
               <animate attributeName="d" 
                 values="M 0,100 Q 250,50 500,100 T 1000,100;
                         M 0,150 Q 250,100 500,150 T 1000,150;
                         M 0,100 Q 250,50 500,100 T 1000,100"
                 dur="8s" repeatCount="indefinite" />
             </path>
-            <path d="M 0,300 Q 400,250 800,300 T 1600,300" stroke="url(#lineGradient)" strokeWidth="2" fill="none">
+            <path d="M 0,300 Q 400,250 800,300 T 1600,300" stroke="url(#lineGradient)" strokeWidth="4" fill="none">
               <animate attributeName="d" 
                 values="M 0,300 Q 400,250 800,300 T 1600,300;
                         M 0,250 Q 400,300 800,250 T 1600,250;
                         M 0,300 Q 400,250 800,300 T 1600,300"
                 dur="10s" repeatCount="indefinite" />
             </path>
-            <path d="M 0,500 Q 300,450 600,500 T 1200,500" stroke="url(#lineGradient)" strokeWidth="2" fill="none">
+            <path d="M 0,500 Q 300,450 600,500 T 1200,500" stroke="url(#lineGradient)" strokeWidth="4" fill="none">
               <animate attributeName="d" 
                 values="M 0,500 Q 300,450 600,500 T 1200,500;
                         M 0,550 Q 300,500 600,550 T 1200,550;
@@ -179,7 +179,7 @@ export default function Home() {
           </svg>
         </div>
         
-        <div className="absolute inset-0 bg-background/70 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-background/40 backdrop-blur-[1px]"></div>
         <div className="container relative z-10 py-32">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-['Fraunces'] font-bold text-5xl md:text-7xl lg:text-8xl text-foreground mb-6 leading-tight">
