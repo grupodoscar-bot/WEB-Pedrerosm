@@ -285,23 +285,137 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-12">
-            {/* Portfolio items - Placeholders for Instagram content */}
-            {[1, 2, 3, 4, 5, 6].map((item) => (
-              <Card key={item} className="rounded-3xl overflow-hidden hover:shadow-2xl transition-organic group bg-card/80 backdrop-blur-sm">
-                <div className="aspect-square bg-muted relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Instagram className="w-16 h-16 text-primary/30" />
-                  </div>
+            {/* Portfolio Item 1 - Recap Diciembre */}
+            <Card className="rounded-3xl overflow-hidden hover:shadow-2xl transition-organic group bg-card/80 backdrop-blur-sm">
+              <div className="aspect-square bg-muted relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=800&fit=crop"
+                  alt="Recap Diciembre - Social Media"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-organic"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-organic"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-['Fraunces'] font-semibold text-lg mb-2">Recap Diciembre 2025</h3>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Carrusel • 87 likes • 12 comentarios
+                </p>
+                <p className="text-muted-foreground text-xs">
+                  Resumen visual de las actividades y logros del mes
+                </p>
+              </div>
+            </Card>
+
+            {/* Portfolio Item 2 - Reel Viral */}
+            <Card className="rounded-3xl overflow-hidden hover:shadow-2xl transition-organic group bg-card/80 backdrop-blur-sm">
+              <div className="aspect-square bg-muted relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=800&fit=crop"
+                  alt="Reel Viral - By My Way"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-organic"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-organic"></div>
+                <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-['DM_Sans'] font-medium">
+                  13.1K views
                 </div>
-                <div className="p-6">
-                  <h3 className="font-['Fraunces'] font-semibold text-lg mb-2">Proyecto {item}</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Contenido de Instagram • {item % 2 === 0 ? 'Reel' : 'Post'}
-                  </p>
+              </div>
+              <div className="p-6">
+                <h3 className="font-['Fraunces'] font-semibold text-lg mb-2">By My Way - Reel Viral</h3>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Reel • 322 likes • 51 comentarios
+                </p>
+                <p className="text-muted-foreground text-xs">
+                  Contenido lifestyle que conectó con la audiencia
+                </p>
+              </div>
+            </Card>
+
+            {/* Portfolio Item 3 - Evento Corporativo */}
+            <Card className="rounded-3xl overflow-hidden hover:shadow-2xl transition-organic group bg-card/80 backdrop-blur-sm">
+              <div className="aspect-square bg-muted relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=800&fit=crop"
+                  alt="Evento Corporativo"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-organic"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-organic"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-['Fraunces'] font-semibold text-lg mb-2">Evento Empresarial</h3>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Post • 83 likes • 8 comentarios
+                </p>
+                <p className="text-muted-foreground text-xs">
+                  Cobertura de evento corporativo con backdrop profesional
+                </p>
+              </div>
+            </Card>
+
+            {/* Portfolio Item 4 - Colaboración Coca-Cola */}
+            <Card className="rounded-3xl overflow-hidden hover:shadow-2xl transition-organic group bg-card/80 backdrop-blur-sm">
+              <div className="aspect-square bg-muted relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=800&fit=crop"
+                  alt="Colaboración Coca-Cola"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-organic"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-organic"></div>
+                <div className="absolute top-4 left-4 bg-background/90 backdrop-blur-sm text-foreground px-3 py-1 rounded-full text-xs font-['DM_Sans'] font-medium">
+                  Gran Marca
                 </div>
-              </Card>
-            ))}
+              </div>
+              <div className="p-6">
+                <h3 className="font-['Fraunces'] font-semibold text-lg mb-2">Gladis x Coca-Cola</h3>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Colaboración • Campaña #PorElClima
+                </p>
+                <p className="text-muted-foreground text-xs">
+                  Gestión de evento con marca internacional
+                </p>
+              </div>
+            </Card>
+
+            {/* Portfolio Item 5 - Red Xcantil Navidad */}
+            <Card className="rounded-3xl overflow-hidden hover:shadow-2xl transition-organic group bg-card/80 backdrop-blur-sm">
+              <div className="aspect-square bg-muted relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=800&h=800&fit=crop"
+                  alt="Evento Navideño Red Xcantil"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-organic"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-organic"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-['Fraunces'] font-semibold text-lg mb-2">Navidad en Red Xcantil</h3>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Reel • 22 likes • Cliente: Red Xcantil
+                </p>
+                <p className="text-muted-foreground text-xs">
+                  Producción de contenido para evento navideño corporativo
+                </p>
+              </div>
+            </Card>
+
+            {/* Portfolio Item 6 - Joya del Ebro */}
+            <Card className="rounded-3xl overflow-hidden hover:shadow-2xl transition-organic group bg-card/80 backdrop-blur-sm">
+              <div className="aspect-square bg-muted relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=800&fit=crop"
+                  alt="Joya del Ebro - Joyería"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-organic"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-organic"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-['Fraunces'] font-semibold text-lg mb-2">Joya del Ebro</h3>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Video • Cliente: Joyería local
+                </p>
+                <p className="text-muted-foreground text-xs">
+                  Producción de contenido para marca de joyería artesanal
+                </p>
+              </div>
+            </Card>
           </div>
 
           <div className="text-center">
