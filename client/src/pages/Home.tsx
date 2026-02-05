@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AnimatedSection from "@/components/AnimatedSection";
 import { 
   Instagram, 
   TrendingUp, 
@@ -203,12 +204,13 @@ export default function Home() {
       {/* Services Section */}
       <section id="servicios" className="py-24 bg-background paper-texture">
         <div className="container">
-          <div className="text-center mb-16">
+          <AnimatedSection className="text-center mb-16">
             <h2 className="font-['Fraunces'] font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
               Lo que hacemos por tu marca
             </h2>
-          </div>
+          </AnimatedSection>
           
+          <AnimatedSection delay={1}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Service 1 */}
             <Card className="p-8 rounded-3xl border-2 hover:border-primary transition-organic hover:shadow-xl bg-card">
@@ -300,6 +302,7 @@ export default function Home() {
               </Button>
             </Card>
           </div>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -461,6 +464,7 @@ export default function Home() {
       {/* About Section */}
       <section id="nosotros" className="py-24 bg-card paper-texture">
         <div className="container">
+          <AnimatedSection>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
             <div>
               <img 
@@ -505,20 +509,21 @@ export default function Home() {
               </div>
             </div>
           </div>
+          </AnimatedSection>
         </div>
       </section>
 
       {/* Testimonials Section */}
       <section className="py-24 bg-background paper-texture">
         <div className="container">
-          <div className="text-center mb-16">
+          <AnimatedSection className="text-center mb-16">
             <h2 className="font-['Fraunces'] font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
               Lo que dicen nuestros clientes
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               La confianza de nuestros clientes es nuestro mayor logro. Estas son algunas de sus experiencias trabajando con nosotros.
             </p>
-          </div>
+          </AnimatedSection>
 
           <div className="max-w-5xl mx-auto">
             <Carousel

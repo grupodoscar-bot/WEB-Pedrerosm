@@ -72,10 +72,10 @@ export default function Footer() {
             © 2026 Pedrero Social Media. Todos los derechos reservados.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-organic text-sm">
+            <a href="/aviso-legal" className="text-muted-foreground hover:text-foreground transition-organic text-sm">
               Aviso Legal
             </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-organic text-sm">
+            <a href="/politica-privacidad" className="text-muted-foreground hover:text-foreground transition-organic text-sm">
               Política de Privacidad
             </a>
           </div>
