@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
+import SEO from "@/components/SEO";
 import { 
   Instagram, 
   TrendingUp, 
@@ -44,6 +45,12 @@ interface PortfolioItem {
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<PortfolioCategory>('todos');
+
+  const seoData = {
+    title: "Pedrero Social Media - Agencia de Marketing en Instagram y TikTok | Badajoz",
+    description: "Agencia de Social Media Marketing en Badajoz especializada en Instagram y TikTok. Estrategia, creación de contenido, gestión de redes sociales y crecimiento para tu marca. Resultados medibles y transparentes.",
+    keywords: "agencia social media badajoz, marketing instagram, marketing tiktok, gestión redes sociales, contenido redes sociales, estrategia digital badajoz, agencia marketing extremadura, reels instagram, community manager"
+  };
 
   const portfolioItems: PortfolioItem[] = [
     {
@@ -123,6 +130,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      <SEO {...seoData} />
       <Header />
       
       {/* Hero Section */}
@@ -412,7 +420,7 @@ export default function Home() {
                 <div className="aspect-square bg-muted relative overflow-hidden">
                   <img 
                     src={item.image}
-                    alt={item.title}
+                    alt={`${item.title} - ${item.description} | Pedrero Social Media`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-organic"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-organic"></div>
@@ -469,7 +477,7 @@ export default function Home() {
             <div>
               <img 
                 src="https://private-us-east-1.manuscdn.com/sessionFile/0A7kUyW8a1lK0ebmC9lJ2X/sandbox/Aj4myfE9rN4772fs9NUgrJ-img-5_1770289112000_na1fn_YWJvdXQtdGVhbQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMEE3a1V5VzhhMWxLMGVibUM5bEoyWC9zYW5kYm94L0FqNG15ZkU5ck40NzcyZnM5TlVnckotaW1nLTVfMTc3MDI4OTExMjAwMF9uYTFmbl9ZV0p2ZFhRdGRHVmhiUS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=rTxyuR9BN2yBqS408lo4vzH5IhFahCzbo9P~hPKrHwM4H8xQpEHixgeiO9axSzwNUhaD4EglyiHjpcZVj4jtuLrBUEJ~TPfPkSA~39ROtPhit6iBmAWmo9w81deFcCH8Mc5cq75pxiAGpS42FG6~2t1oIRU7JNiO-QrozrqCaomyxAZosoa2T0t~Vc1RTiO0u2VGG~ni50fszbjnK2VioOeb8KFZAb01RaHEDZENc~mOI~IsoyuY2HzG41F70EhzJ~5rHqFxzvfkhoAkVk3peLybdl8GJXBKsIH4ioqqYldx9oawA~Ldd48RBOg62DNOAWsh1iA6O0~EaiOFiVSmBQ__"
-                alt="Equipo Pedrero Social Media"
+                alt="Equipo de Pedrero Social Media - Agencia de marketing digital especializada en Instagram y TikTok en Badajoz"
                 className="rounded-3xl shadow-2xl w-full h-auto"
               />
             </div>

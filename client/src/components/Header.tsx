@@ -43,7 +43,7 @@ export default function Header() {
             <Link href="/" className="flex items-center group relative z-50">
               <img 
                 src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/VuacErqQgkZnYdUQ.png" 
-                alt="Pedrero Social Media"
+                alt="Pedrero Social Media - Agencia de Social Media Marketing en Badajoz"
                 className="h-12 w-auto transition-organic group-hover:scale-105"
               />
             </Link>

@@ -1,9 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function PoliticaPrivacidad() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Política de Privacidad - Pedrero Social Media"
+        description="Política de privacidad de Pedrero Social Media. Información sobre protección de datos, cookies, derechos RGPD y tratamiento de información personal."
+        keywords="política privacidad, protección datos, rgpd, cookies, pedrero social media"
+      />
       <Header />
       
       <main className="flex-1 pt-20">

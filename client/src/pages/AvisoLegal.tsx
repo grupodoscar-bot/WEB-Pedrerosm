@@ -1,9 +1,15 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 export default function AvisoLegal() {
   return (
     <div className="min-h-screen flex flex-col">
+      <SEO 
+        title="Aviso Legal - Pedrero Social Media"
+        description="Aviso legal de Pedrero Social Media. Información sobre datos identificativos, condiciones de uso, propiedad intelectual y legislación aplicable."
+        keywords="aviso legal, términos y condiciones, pedrero social media"
+      />
       <Header />
       
       <main className="flex-1 pt-20">
