@@ -41,11 +41,9 @@ export default function Header() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center group relative z-50">
-              <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/VuacErqQgkZnYdUQ.png" 
-                alt="Pedrero Social Media - Agencia de Social Media Marketing en Badajoz"
-                className="h-12 w-auto transition-organic group-hover:scale-105"
-              />
+              <span className="font-['Fraunces'] font-bold text-2xl text-foreground transition-organic group-hover:text-primary">
+                Pedrero Social Media
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
