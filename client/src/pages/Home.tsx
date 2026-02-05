@@ -134,15 +134,52 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden paper-texture"
-        style={{
-          backgroundImage: `url('https://private-us-east-1.manuscdn.com/sessionFile/0A7kUyW8a1lK0ebmC9lJ2X/sandbox/Aj4myfE9rN4772fs9NUgrJ-img-1_1770289111000_na1fn_aGVyby1iYWNrZ3JvdW5k.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvMEE3a1V5VzhhMWxLMGVibUM5bEoyWC9zYW5kYm94L0FqNG15ZkU5ck40NzcyZnM5TlVnckotaW1nLTFfMTc3MDI4OTExMTAwMF9uYTFmbl9hR1Z5YnkxaVlXTnJaM0p2ZFc1ay5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=i0P7nk1pW3kxU-cxhcp0xrIri-JPiSyxup3YJLDn4UofW2aOwhoeAzg1sCtIO7~cSqkWLsL8GssMjmYqPt23VFFpiZRoSY~NdbFrZmn4n7Q8kQJQAoZ-JEXhDDJwzZZr9yupcIKrTQ9T5TdrBkRlG7LDqdV-SoQw56YdWoQA-jkH3HTK209vYQ7FzkS4Ag0SZoryKRE1GpGzOKbnaKSGBWqWpZbEs6cHSUBOJ-CI8EzpB0r6m4RDNjx-IEpU9SUmSgDvIGScjXs~NX4YV7Mh5lc9h6DQopuAvPPi3tY3vS7t~S3A9fWoyvEPSthBwnUEQDURJ2PGCnys7rbayJPTGQ__')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="https://cdn.pixabay.com/video/2023/04/25/159425-821588933_large.mp4" type="video/mp4" />
+        </video>
+        
+        {/* Animated Lines Background */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <svg className="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style={{stopColor: 'oklch(0.7 0.15 45)', stopOpacity: 0.1}} />
+                <stop offset="100%" style={{stopColor: 'oklch(0.6 0.12 30)', stopOpacity: 0.05}} />
+              </linearGradient>
+            </defs>
+            <path d="M 0,100 Q 250,50 500,100 T 1000,100" stroke="url(#lineGradient)" strokeWidth="2" fill="none">
+              <animate attributeName="d" 
+                values="M 0,100 Q 250,50 500,100 T 1000,100;
+                        M 0,150 Q 250,100 500,150 T 1000,150;
+                        M 0,100 Q 250,50 500,100 T 1000,100"
+                dur="8s" repeatCount="indefinite" />
+            </path>
+            <path d="M 0,300 Q 400,250 800,300 T 1600,300" stroke="url(#lineGradient)" strokeWidth="2" fill="none">
+              <animate attributeName="d" 
+                values="M 0,300 Q 400,250 800,300 T 1600,300;
+                        M 0,250 Q 400,300 800,250 T 1600,250;
+                        M 0,300 Q 400,250 800,300 T 1600,300"
+                dur="10s" repeatCount="indefinite" />
+            </path>
+            <path d="M 0,500 Q 300,450 600,500 T 1200,500" stroke="url(#lineGradient)" strokeWidth="2" fill="none">
+              <animate attributeName="d" 
+                values="M 0,500 Q 300,450 600,500 T 1200,500;
+                        M 0,550 Q 300,500 600,550 T 1200,550;
+                        M 0,500 Q 300,450 600,500 T 1200,500"
+                dur="12s" repeatCount="indefinite" />
+            </path>
+          </svg>
+        </div>
+        
+        <div className="absolute inset-0 bg-background/70 backdrop-blur-sm"></div>
         <div className="container relative z-10 py-32">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-['Fraunces'] font-bold text-5xl md:text-7xl lg:text-8xl text-foreground mb-6 leading-tight">
