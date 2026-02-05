@@ -9,13 +9,12 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/">
-            <a className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center transition-organic group-hover:scale-105">
-                <span className="text-primary-foreground font-bold text-lg">PS</span>
-              </div>
-              <span className="font-['Fraunces'] font-semibold text-xl text-foreground">
-                Pedrero SM
-              </span>
+            <a className="flex items-center group">
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/VuacErqQgkZnYdUQ.png" 
+                alt="Pedrero Social Media"
+                className="h-12 w-auto transition-organic group-hover:scale-105"
+              />
             </a>
           </Link>
 
