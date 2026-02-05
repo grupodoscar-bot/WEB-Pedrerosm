@@ -37,6 +37,27 @@ pnpm dev
 pnpm build
 ```
 
+## 🚀 Despliegue
+
+### Despliegue en Plesk
+
+Para desplegar en un servidor Plesk, consulta la guía completa en [DEPLOY_PLESK.md](./DEPLOY_PLESK.md).
+
+**Método rápido**:
+
+```bash
+# Ejecutar script de build
+./deploy.sh
+
+# Subir el contenido de dist/public/ a httpdocs/ en Plesk
+```
+
+### Otras Plataformas
+
+- **Vercel**: Conecta el repositorio desde vercel.com
+- **Netlify**: Conecta el repositorio desde netlify.com
+- **Manus**: Usa el botón "Publish" en la UI
+
 ## 🎨 Filosofía de Diseño
 
 **Minimalismo Orgánico con Textura**
