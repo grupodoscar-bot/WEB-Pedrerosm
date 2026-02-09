@@ -163,35 +163,35 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Three-Column Video Background */}
         <div className="absolute inset-0 flex">
-          {/* Video Izquierda */}
+          {/* Video Izquierda - oculto en móvil */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-1/3 h-full object-cover"
+            className="hidden md:block md:w-1/2 lg:w-1/3 h-full object-cover"
           >
             <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/dEqIKHxSmoCpFLAt.mp4" type="video/mp4" />
           </video>
           
-          {/* Video Centro */}
+          {/* Video Centro - siempre visible */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-1/3 h-full object-cover"
+            className="w-full md:w-1/2 lg:w-1/3 h-full object-cover"
           >
             <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/ZVEIUnqcHVNmycMy.mp4" type="video/mp4" />
           </video>
           
-          {/* Video Derecha */}
+          {/* Video Derecha - oculto en móvil y tablet */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-1/3 h-full object-cover"
+            className="hidden lg:block lg:w-1/3 h-full object-cover"
           >
             <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/PCnpNOijkPSrBSXF.mp4" type="video/mp4" />
           </video>
@@ -752,18 +752,10 @@ export default function Home() {
                     type="checkbox" 
                     id="privacy" 
                     required 
-                    className="mt-1 w-4 h-4 rounded border-input text-primary focus:ring-primary"
+                    className="mt-1 w-4 h-4 flex-shrink-0 rounded border-input text-primary focus:ring-primary"
                   />
                   <Label htmlFor="privacy" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
-                    He leído y acepto la{' '}
-                    <a href="/politica-privacidad" target="_blank" className="text-primary hover:underline">
-                      Política de Privacidad
-                    </a>
-                    {' '}y el{' '}
-                    <a href="/aviso-legal" target="_blank" className="text-primary hover:underline">
-                      Aviso Legal
-                    </a>
-                    . Consiento el tratamiento de mis datos para que Pedrero Social Media pueda responder a mi consulta.
+                    He leído y acepto la <a href="/politica-privacidad" target="_blank" className="text-primary hover:underline">Política de Privacidad</a> y el <a href="/aviso-legal" target="_blank" className="text-primary hover:underline">Aviso Legal</a>. Consiento el tratamiento de mis datos para que Pedrero Social Media pueda responder a mi consulta.
                   </Label>
                 </div>
 
