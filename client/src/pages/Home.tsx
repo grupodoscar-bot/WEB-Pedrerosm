@@ -291,7 +291,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Nos encargamos de todo. Planificación, publicación, interacción y análisis para que tú te centres en tu negocio.
               </p>
-              <Button variant="ghost" className="group font-['DM_Sans'] font-medium p-0 h-auto">
+              <Button 
+                variant="ghost" 
+                className="group font-['DM_Sans'] font-medium p-0 h-auto"
+                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Ver más
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-organic" />
               </Button>
@@ -306,7 +310,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Creamos el plan perfecto para tu marca. Definimos tu voz, pilares de contenido y calendario editorial.
               </p>
-              <Button variant="ghost" className="group font-['DM_Sans'] font-medium p-0 h-auto">
+              <Button 
+                variant="ghost" 
+                className="group font-['DM_Sans'] font-medium p-0 h-auto"
+                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Ver más
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-organic" />
               </Button>
@@ -321,7 +329,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Producimos reels, carruseles y posts que captan la atención. Desde el guion hasta la edición final.
               </p>
-              <Button variant="ghost" className="group font-['DM_Sans'] font-medium p-0 h-auto">
+              <Button 
+                variant="ghost" 
+                className="group font-['DM_Sans'] font-medium p-0 h-auto"
+                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Ver más
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-organic" />
               </Button>
@@ -336,7 +348,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Construimos y cuidamos tu comunidad. Respondemos comentarios y mensajes para fidelizar seguidores.
               </p>
-              <Button variant="ghost" className="group font-['DM_Sans'] font-medium p-0 h-auto">
+              <Button 
+                variant="ghost" 
+                className="group font-['DM_Sans'] font-medium p-0 h-auto"
+                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Ver más
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-organic" />
               </Button>
@@ -351,7 +367,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Creamos y optimizamos campañas en Instagram y TikTok para llegar a nuevos clientes y acelerar ventas.
               </p>
-              <Button variant="ghost" className="group font-['DM_Sans'] font-medium p-0 h-auto">
+              <Button 
+                variant="ghost" 
+                className="group font-['DM_Sans'] font-medium p-0 h-auto"
+                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Ver más
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-organic" />
               </Button>
@@ -366,7 +386,11 @@ export default function Home() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Te damos las herramientas para que lo hagas tú. Sesiones 1 a 1 para auditar tu perfil o formar a tu equipo.
               </p>
-              <Button variant="ghost" className="group font-['DM_Sans'] font-medium p-0 h-auto">
+              <Button 
+                variant="ghost" 
+                className="group font-['DM_Sans'] font-medium p-0 h-auto"
+                onClick={() => document.getElementById('contacto')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 Ver más
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-organic" />
               </Button>
@@ -598,161 +622,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-background paper-texture">
-        <div className="container">
-          <AnimatedSection className="text-center mb-16">
-            <h2 className="font-['Fraunces'] font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
-              Lo que dicen nuestros clientes
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              La confianza de nuestros clientes es nuestro mayor logro. Estas son algunas de sus experiencias trabajando con nosotros.
-            </p>
-          </AnimatedSection>
-
-          <div className="max-w-5xl mx-auto">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent>
-                {/* Testimonial 1 - Red Xcantil */}
-                <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                  <Card className="p-8 rounded-3xl h-full bg-card hover:shadow-xl transition-organic">
-                    <div className="flex flex-col h-full">
-                      <div className="flex items-start gap-4 mb-6">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center flex-shrink-0">
-                          <Users className="w-8 h-8 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-['Fraunces'] font-semibold text-lg mb-1">María González</h3>
-                          <p className="text-muted-foreground text-sm">Directora de Marketing, Red Xcantil</p>
-                        </div>
-                      </div>
-                      <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
-                        "Pedrero Social Media transformó completamente nuestra presencia en redes sociales. Su trabajo en nuestro evento navideño fue impecable, desde la planificación hasta la ejecución. Los reels que crearon generaron un engagement que nunca habíamos visto antes. Son profesionales, creativos y siempre están un paso adelante."
-                      </blockquote>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <div key={i} className="w-5 h-5 text-primary">
-                            ★
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </Card>
-                </CarouselItem>
-
-                {/* Testimonial 2 - Joya del Ebro */}
-                <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                  <Card className="p-8 rounded-3xl h-full bg-card hover:shadow-xl transition-organic">
-                    <div className="flex flex-col h-full">
-                      <div className="flex items-start gap-4 mb-6">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center flex-shrink-0">
-                          <Sparkles className="w-8 h-8 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-['Fraunces'] font-semibold text-lg mb-1">Carmen Ruiz</h3>
-                          <p className="text-muted-foreground text-sm">Fundadora, Joya del Ebro</p>
-                        </div>
-                      </div>
-                      <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
-                        "Como marca artesanal, necesitábamos alguien que entendiera nuestra esencia y la transmitiera en digital. Pedrero Social Media capturó la elegancia y delicadeza de nuestras piezas de joyería de una manera que nos dejó sin palabras. Las ventas a través de Instagram aumentaron un 40% en solo tres meses."
-                      </blockquote>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <div key={i} className="w-5 h-5 text-primary">
-                            ★
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </Card>
-                </CarouselItem>
-
-                {/* Testimonial 3 - Gladis Restaurante */}
-                <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                  <Card className="p-8 rounded-3xl h-full bg-card hover:shadow-xl transition-organic">
-                    <div className="flex flex-col h-full">
-                      <div className="flex items-start gap-4 mb-6">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center flex-shrink-0">
-                          <Target className="w-8 h-8 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-['Fraunces'] font-semibold text-lg mb-1">Roberto Sánchez</h3>
-                          <p className="text-muted-foreground text-sm">Gerente, Gladis Restaurante</p>
-                        </div>
-                      </div>
-                      <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
-                        "Trabajar con Pedrero Social Media en nuestra colaboración con Coca-Cola fue una experiencia increíble. Gestionaron todo el evento con profesionalismo y crearon contenido que llegó a miles de personas. Su capacidad para coordinar con grandes marcas y mantener nuestra identidad local es admirable."
-                      </blockquote>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <div key={i} className="w-5 h-5 text-primary">
-                            ★
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </Card>
-                </CarouselItem>
-
-                {/* Testimonial 4 - Cliente Genérico */}
-                <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-                  <Card className="p-8 rounded-3xl h-full bg-card hover:shadow-xl transition-organic">
-                    <div className="flex flex-col h-full">
-                      <div className="flex items-start gap-4 mb-6">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center flex-shrink-0">
-                          <TrendingUp className="w-8 h-8 text-primary" />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-['Fraunces'] font-semibold text-lg mb-1">Laura Martínez</h3>
-                          <p className="text-muted-foreground text-sm">CEO, Startup Tech Badajoz</p>
-                        </div>
-                      </div>
-                      <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
-                        "Como startup, teníamos presupuesto limitado pero grandes ambiciones. Pedrero Social Media nos ayudó a construir una presencia sólida en redes desde cero. Su estrategia de contenidos fue clave para atraer a nuestros primeros clientes. Son un partner estratégico, no solo una agencia."
-                      </blockquote>
-                      <div className="flex gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <div key={i} className="w-5 h-5 text-primary">
-                            ★
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </Card>
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious className="-left-12 hidden lg:flex" />
-              <CarouselNext className="-right-12 hidden lg:flex" />
-            </Carousel>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="text-4xl font-['Fraunces'] font-bold text-primary mb-2">4+</div>
-              <div className="text-muted-foreground text-sm">Años de Experiencia</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-['Fraunces'] font-bold text-primary mb-2">50+</div>
-              <div className="text-muted-foreground text-sm">Proyectos Completados</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-['Fraunces'] font-bold text-primary mb-2">13K+</div>
-              <div className="text-muted-foreground text-sm">Views Totales</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-['Fraunces'] font-bold text-primary mb-2">687</div>
-              <div className="text-muted-foreground text-sm">Seguidores Gestionados</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contacto" className="py-24 bg-background paper-texture">
@@ -834,6 +703,26 @@ export default function Home() {
                   />
                 </div>
 
+                <div className="flex items-start gap-3 pt-2">
+                  <input 
+                    type="checkbox" 
+                    id="privacy" 
+                    required 
+                    className="mt-1 w-4 h-4 rounded border-input text-primary focus:ring-primary"
+                  />
+                  <Label htmlFor="privacy" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
+                    He leído y acepto la{' '}
+                    <a href="/politica-privacidad" target="_blank" className="text-primary hover:underline">
+                      Política de Privacidad
+                    </a>
+                    {' '}y el{' '}
+                    <a href="/aviso-legal" target="_blank" className="text-primary hover:underline">
+                      Aviso Legal
+                    </a>
+                    . Consiento el tratamiento de mis datos para que Pedrero Social Media pueda responder a mi consulta.
+                  </Label>
+                </div>
+
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button 
                     type="submit" 
@@ -845,11 +734,10 @@ export default function Home() {
                   <Button 
                     type="button" 
                     size="lg" 
-                    variant="outline" 
-                    className="flex-1 rounded-full font-['DM_Sans'] font-medium"
+                    className="flex-1 rounded-full font-['DM_Sans'] font-medium bg-[#25D366] hover:bg-[#20BA5A] text-white border-0"
                     asChild
                   >
-                    <a href="https://wa.me/34XXXXXXXXX" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/34633647884" target="_blank" rel="noopener noreferrer">
                       O escríbenos por WhatsApp
                     </a>
                   </Button>

@@ -1,0 +1,10 @@
+# robots.txt para Pedrero Social Media
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pedrerosm.com/sitemap.xml
+
+# Bloquear archivos innecesarios
+Disallow: /api/
+Disallow: /*.json$

@@ -28,8 +28,9 @@ export default function AvisoLegal() {
                   En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico, se informa a los usuarios de los datos identificativos de Pedrero Social Media:
                 </p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                  <li><strong>Denominación social:</strong> Pedrero Social Media</li>
-                  <li><strong>Domicilio social:</strong> Badajoz, España</li>
+                  <li><strong>Titular:</strong> Celia Pedrero Frade</li>
+                  <li><strong>NIF:</strong> 80234134Z</li>
+                  <li><strong>Domicilio:</strong> Calle Luis Álvarez Lencero 12, 06011 Badajoz, España</li>
                   <li><strong>Correo electrónico:</strong> hola@pedrerosm.com</li>
                   <li><strong>Instagram:</strong> @pedrero.socialmedia</li>
                 </ul>

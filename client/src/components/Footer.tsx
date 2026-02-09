@@ -69,7 +69,15 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2026 Pedrero Social Media. Todos los derechos reservados.
+            © 2026 Pedrero Social Media. | Hecho con ♥ por{' '}
+            <a 
+              href="https://www.grupodoscar.es" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary hover:underline transition-organic"
+            >
+              Grupo Doscar
+            </a>
           </p>
           <div className="flex gap-6">
             <a href="/aviso-legal" className="text-muted-foreground hover:text-foreground transition-organic text-sm">
@@ -77,6 +85,9 @@ export default function Footer() {
             </a>
             <a href="/politica-privacidad" className="text-muted-foreground hover:text-foreground transition-organic text-sm">
               Política de Privacidad
+            </a>
+            <a href="/politica-cookies" className="text-muted-foreground hover:text-foreground transition-organic text-sm">
+              Política de Cookies
             </a>
           </div>
         </div>
