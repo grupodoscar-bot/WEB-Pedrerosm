@@ -34,6 +34,13 @@ export default function Header() {
     setMobileMenuOpen(false);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -48,30 +55,30 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
-              <Link 
-                href="/#servicios"
+              <button 
+                onClick={() => scrollToSection('servicios')}
                 className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium"
               >
                 Servicios
-              </Link>
-              <Link 
-                href="/#portfolio"
+              </button>
+              <button 
+                onClick={() => scrollToSection('portfolio')}
                 className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium"
               >
                 Portfolio
-              </Link>
-              <Link 
-                href="/#nosotros"
+              </button>
+              <button 
+                onClick={() => scrollToSection('nosotros')}
                 className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium"
               >
                 Nosotros
-              </Link>
-              <Link 
-                href="/#contacto"
+              </button>
+              <button 
+                onClick={() => scrollToSection('contacto')}
                 className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium"
               >
                 Contacto
-              </Link>
+              </button>
             </nav>
 
             {/* Desktop CTA Buttons */}
@@ -123,34 +130,30 @@ export default function Header() {
       >
         <nav className="flex flex-col p-8 gap-6">
           {/* Mobile Navigation Links */}
-          <Link 
-            href="/#servicios"
-            onClick={handleLinkClick}
-            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
+          <button 
+            onClick={() => { scrollToSection('servicios'); handleLinkClick(); }}
+            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50 text-left"
           >
             Servicios
-          </Link>
-          <Link 
-            href="/#portfolio"
-            onClick={handleLinkClick}
-            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
+          </button>
+          <button 
+            onClick={() => { scrollToSection('portfolio'); handleLinkClick(); }}
+            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50 text-left"
           >
             Portfolio
-          </Link>
-          <Link 
-            href="/#nosotros"
-            onClick={handleLinkClick}
-            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
+          </button>
+          <button 
+            onClick={() => { scrollToSection('nosotros'); handleLinkClick(); }}
+            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50 text-left"
           >
             Nosotros
-          </Link>
-          <Link 
-            href="/#contacto"
-            onClick={handleLinkClick}
-            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50"
+          </button>
+          <button 
+            onClick={() => { scrollToSection('contacto'); handleLinkClick(); }}
+            className="text-foreground/70 hover:text-foreground transition-organic font-['DM_Sans'] font-medium text-lg py-3 border-b border-border/50 text-left"
           >
             Contacto
-          </Link>
+          </button>
 
           {/* Mobile CTA Buttons */}
           <div className="flex flex-col gap-4 mt-6">
