@@ -754,9 +754,9 @@ export default function Home() {
                     required 
                     className="mt-1 w-4 h-4 flex-shrink-0 rounded border-input text-primary focus:ring-primary"
                   />
-                  <Label htmlFor="privacy" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
+                  <label htmlFor="privacy" className="text-sm text-muted-foreground leading-relaxed cursor-pointer">
                     He leído y acepto la <a href="/politica-privacidad" target="_blank" className="text-primary hover:underline">Política de Privacidad</a> y el <a href="/aviso-legal" target="_blank" className="text-primary hover:underline">Aviso Legal</a>. Consiento el tratamiento de mis datos para que Pedrero Social Media pueda responder a mi consulta.
-                  </Label>
+                  </label>
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
