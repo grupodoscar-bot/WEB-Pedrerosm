@@ -18,7 +18,8 @@ import {
   BarChart3,
   Lightbulb,
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  Loader2
 } from "lucide-react";
 import { toast } from "sonner";
 import { useState } from "react";
@@ -667,7 +668,15 @@ export default function Home() {
               </p>
             </div>
 
-            <Card className="p-8 md:p-12 rounded-3xl shadow-xl bg-card">
+            <Card className="p-8 md:p-12 rounded-3xl shadow-xl bg-card relative">
+              {isSubmitting && (
+                <div className="absolute inset-0 bg-background/50 backdrop-blur-sm rounded-3xl z-10 flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-3">
+                    <Loader2 className="w-8 h-8 text-primary animate-spin" />
+                    <p className="text-sm font-['DM_Sans'] font-medium text-foreground">Enviando tu mensaje...</p>
+                  </div>
+                </div>
+              )}
               <form onSubmit={handleFormSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -763,9 +772,16 @@ export default function Home() {
                     type="submit" 
                     size="lg" 
                     disabled={isSubmitting}
-                    className="flex-1 rounded-full font-['DM_Sans'] font-medium"
+                    className="flex-1 rounded-full font-['DM_Sans'] font-medium relative"
                   >
-                    {isSubmitting ? 'Enviando...' : 'Enviar y Agendar Llamada'}
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                        Enviando...
+                      </>
+                    ) : (
+                      'Enviar y Agendar Llamada'
+                    )}
                   </Button>
                   <Button 
                     type="button" 
