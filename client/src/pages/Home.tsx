@@ -444,10 +444,19 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="text-center mb-12">
             <h2 className="font-['Fraunces'] font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
-              Proyectos que nos llenan de orgullo
+              Portfolio de trabajos
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-              Un vistazo a nuestro trabajo más reciente. Extraído directamente de nuestro Instagram.
+            <p className="text-foreground/80 text-lg max-w-3xl mx-auto mb-4 leading-relaxed">
+              Mi portfolio se compone de proyectos reales desarrollados para empresas de distintos sectores en Extremadura.
+            </p>
+            <p className="text-foreground/80 text-lg max-w-3xl mx-auto mb-4 leading-relaxed">
+              Mi trabajo se centra en la creación de contenido audiovisual y la comunicación estratégica aplicada a negocio: vídeos corporativos, contenido para redes sociales, fotografía profesional y campañas pensadas para posicionar marca, no solo para "estar presentes".
+            </p>
+            <p className="text-foreground/80 text-lg max-w-3xl mx-auto mb-4 leading-relaxed">
+              He trabajado con marcas como Gladys, Castellano Joyeros, Hotel Barceló Cáceres V Centenario, proyectos inmobiliarios, restauración, eventos empresariales y redes de networking como Red Mercantil o Círculo Empresarial Cacereño, entre otros.
+            </p>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-8 leading-relaxed italic">
+              Cada proyecto parte siempre del mismo punto: entender la empresa, su público y su objetivo, para después crear un contenido coherente, profesional y alineado con su identidad.
             </p>
 
             {/* Category Filters */}
@@ -545,13 +554,19 @@ export default function Home() {
             </div>
             <div>
               <h2 className="font-['Fraunces'] font-bold text-4xl md:text-5xl text-foreground mb-6">
-                Más que una agencia, somos tu partner de crecimiento
+                Sobre mí
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                En Pedrero Social Media, creemos en el poder de las conexiones humanas. Nacimos en Badajoz con el objetivo de ayudar a marcas valientes a contar su historia en el cambiante mundo digital. No solo gestionamos redes; construimos comunidades, impulsamos conversaciones y convertimos seguidores en clientes fieles.
+                Soy Celia Pedrero, publicista especializada en comunicación estratégica y creación de contenido audiovisual.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Trabajo de forma independiente acompañando a empresas que quieren profesionalizar su imagen y comunicar mejor lo que hacen. Mi enfoque combina creatividad y estrategia: analizo la marca, defino el mensaje, planifico el contenido y lo ejecuto de forma visual, cuidada y eficaz.
+              </p>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Mi trabajo no consiste solo en grabar o publicar. Me involucro en cada proyecto para que la comunicación tenga sentido, continuidad y resultados, adaptándome a sectores como hostelería, joyería, inmobiliaria, hotelería y eventos corporativos.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                Nuestro enfoque es simple: estrategia basada en datos, creatividad que deja huella y una consistencia que garantiza resultados. Somos un equipo joven, verificado y apoyado por instituciones, lo que nos da una perspectiva fresca y la solidez que tu marca necesita.
+                Actualmente desarrollo proyectos de manera recurrente con distintos clientes, gestionando su contenido mensual, grabaciones profesionales, fotografía corporativa y vídeos estratégicos para redes sociales.
               </p>
               
               <div className="space-y-4">
@@ -745,10 +760,16 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="font-['Fraunces'] font-bold text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
-                ¿Listo para llevar tu marca al siguiente nivel?
+                Contacto
               </h2>
-              <p className="text-muted-foreground text-lg">
-                Hablemos de tu proyecto. Rellena el formulario o envíanos un mensaje directo. Te responderemos en menos de 24 horas.
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-4">
+                Si quieres trabajar conmigo, puedes hacerlo a través del formulario de contacto.
+              </p>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Para facilitar la gestión y ofrecerte una respuesta ajustada a tus necesidades, te agradeceré que indiques el motivo de tu consulta seleccionando una de las opciones disponibles.
+              </p>
+              <p className="text-muted-foreground text-base max-w-2xl mx-auto mt-4 italic">
+                Responderé personalmente para valorar tu proyecto y proponerte una solución adaptada a tus objetivos y a la realidad de tu negocio.
               </p>
             </div>
 
@@ -787,10 +808,27 @@ export default function Home() {
                 </div>
 
                 <div>
-                  <Label htmlFor="goal" className="font-['DM_Sans'] font-medium">¿Cuál es tu principal objetivo?</Label>
+                  <Label htmlFor="service" className="font-['DM_Sans'] font-medium">Motivo de consulta</Label>
+                  <select 
+                    id="service"
+                    required
+                    className="mt-2 w-full rounded-2xl border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option value="gestion-redes">Gestión y estrategia de redes sociales</option>
+                    <option value="video-corporativo">Vídeo corporativo</option>
+                    <option value="contenido-audiovisual">Contenido audiovisual para marcas</option>
+                    <option value="fotografia">Fotografía profesional</option>
+                    <option value="eventos">Eventos y grabaciones puntuales</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+
+                <div>
+                  <Label htmlFor="message" className="font-['DM_Sans'] font-medium">Mensaje</Label>
                   <Textarea 
-                    id="goal" 
-                    placeholder="Ej: Aumentar ventas, más seguidores, mejor imagen de marca..." 
+                    id="message" 
+                    placeholder="Cuéntame más sobre tu proyecto..." 
                     required 
                     className="mt-2 rounded-2xl min-h-[120px]"
                   />
