@@ -60,7 +60,7 @@ export default function Home() {
       type: "Carrusel",
       metrics: "87 likes • 12 comentarios",
       description: "Resumen visual de las actividades y logros del mes",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=800&fit=crop"
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/QdhzkvBVolwuMasr.webp"
     },
     {
       id: 2,
@@ -69,45 +69,45 @@ export default function Home() {
       type: "Reel",
       metrics: "322 likes • 51 comentarios",
       description: "Contenido lifestyle que conectó con la audiencia",
-      image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=800&fit=crop",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/GkWWYuAUktIIvWIz.webp",
       badge: "13.1K views"
     },
     {
       id: 3,
-      title: "Evento Empresarial",
+      title: "Navidad en Red Mercantil",
       category: "eventos",
       type: "Post",
-      metrics: "83 likes • 8 comentarios",
-      description: "Cobertura de evento corporativo con backdrop profesional",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=800&fit=crop"
+      metrics: "24 likes • 1 comentario",
+      description: "Comida de Navidad de Red Mercantil Badajoz en María Coqueta",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/XhUfbZMTsnNqGRYb.webp"
     },
     {
       id: 4,
       title: "Gladis x Coca-Cola",
       category: "colaboraciones",
       type: "Colaboración",
-      metrics: "Campaña #PorElClima",
-      description: "Gestión de evento con marca internacional",
-      image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=800&fit=crop",
+      metrics: "56 likes • 3 comentarios",
+      description: "Reconocimiento de Coca-Cola y ECODES por compromiso ambiental #PorElClima",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/wMODcynMRdSLZuDt.webp",
       badge: "Gran Marca"
     },
     {
       id: 5,
-      title: "Navidad en Red Xcantil",
+      title: "Carmen Gastrobar 13º Aniversario",
       category: "eventos",
       type: "Reel",
-      metrics: "22 likes • Cliente: Red Xcantil",
-      description: "Producción de contenido para evento navideño corporativo",
-      image: "https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=800&h=800&fit=crop"
+      metrics: "33 likes • 5 comentarios",
+      description: "Cobertura del 13º aniversario de Carmen Gastrobar",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/yxjJJjsNpyuNdckj.webp"
     },
     {
       id: 6,
-      title: "Joya del Ebro",
+      title: "Castellano Joyeros - Colgante Nexus",
       category: "colaboraciones",
       type: "Video",
-      metrics: "Cliente: Joyería local",
-      description: "Producción de contenido para marca de joyería artesanal",
-      image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=800&fit=crop"
+      metrics: "79 likes",
+      description: "Reel promocional del colgante Nexus en Oro de Ley 18K",
+      image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/qFcVuNfoYaVEBqEh.webp"
     }
   ];
 
