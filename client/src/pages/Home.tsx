@@ -135,16 +135,41 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Video Background */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="https://cdn.pixabay.com/video/2023/04/25/159425-821588933_large.mp4" type="video/mp4" />
-        </video>
+        {/* Three-Column Video Background */}
+        <div className="absolute inset-0 flex">
+          {/* Video Izquierda */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-1/3 h-full object-cover"
+          >
+            <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/dEqIKHxSmoCpFLAt.mp4" type="video/mp4" />
+          </video>
+          
+          {/* Video Centro */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-1/3 h-full object-cover"
+          >
+            <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/ZVEIUnqcHVNmycMy.mp4" type="video/mp4" />
+          </video>
+          
+          {/* Video Derecha */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-1/3 h-full object-cover"
+          >
+            <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663330305411/PCnpNOijkPSrBSXF.mp4" type="video/mp4" />
+          </video>
+        </div>
         
         {/* Animated Lines Background */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
